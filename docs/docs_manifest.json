@@ -657,8 +657,8 @@
     "trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading.md",
-      "hash": "6ccc2870106a536f4005e61ebe0d0d1a5838fe709698be60509a265408eb4692",
-      "last_updated": "2026-03-01T16:09:28.752044"
+      "hash": "87247b41fe4f1d6a22110a4f7c1fe3c6c28599798258293c948abae42e307dd6",
+      "last_updated": "2026-03-03T09:22:34.745680"
     },
     "trading/account-abstraction-modes.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes",
@@ -786,6 +786,12 @@
       "hash": "a26fe81c259fcca7408720318fc7e7907eccb3587b2bcb8070460bd47e7b3536",
       "last_updated": "2026-03-01T16:09:55.144369"
     },
+    "trading/sub-accounts.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/sub-accounts",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/sub-accounts.md",
+      "hash": "9816121f16c9c3a302ec2120982913edd707cf4847ad467c2c25b6d68f71f091",
+      "last_updated": "2026-03-03T09:22:52.966337"
+    },
     "trading/take-profit-and-stop-loss-orders-tp-sl.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/take-profit-and-stop-loss-orders-tp-sl",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/take-profit-and-stop-loss-orders-tp-sl.md",
@@ -812,14 +818,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-03T06:26:21.138669",
-    "duration_seconds": 81.22648,
-    "pages_discovered": 135,
-    "pages_fetched": 135,
+    "completed_at": "2026-03-03T09:22:56.567113",
+    "duration_seconds": 122.228987,
+    "pages_discovered": 136,
+    "pages_fetched": 136,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-03T06:26:21.138716",
+  "last_updated": "2026-03-03T09:22:56.567135",
   "base_url": "https://raw.githubusercontent.com/vaniiiii/hyperliquid-docs/main/docs/",
   "github_repository": "vaniiiii/hyperliquid-docs",
   "github_ref": "main",

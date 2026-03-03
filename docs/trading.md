@@ -1,6 +1,7 @@
 # Trading
 
 - [Fees](/hyperliquid-docs/trading/fees.md)
+- [Sub-accounts](/hyperliquid-docs/trading/sub-accounts.md)
 - [Builder codes](/hyperliquid-docs/trading/builder-codes.md)
 - [Perpetual assets](/hyperliquid-docs/trading/perpetual-assets.md)
 - [Contract specifications](/hyperliquid-docs/trading/contract-specifications.md)
