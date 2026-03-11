@@ -81,6 +81,12 @@ The subscription object contains the details of the specific feed you want to su
     * Subscription message: `{ "type": "spotState", "user": "<address>", "isPortfolioMargin": bool }`
     * Data format: `WsSpotState`&#x20;
     * `isPortfolioMargin` is an optional argument
+21. `allDexsClearinghouseState`
+    1. Subscription message: `{ "type": "allDexsClearinghouseState", "user": "<address>" }`
+    2. Data format: `WsAllDexsClearinghouseState`
+22. `allDexsAssetCtxs`&#x20;
+    1. Subscription message: `{ "type": "allDexsAssetCtxs" }`
+    2. Data format: `WsAllDexsAssetCtxs`
 
 ### Data formats
 
@@ -107,6 +113,8 @@ The `data` field format depends on the subscription type:
 * `WsUserNonFundingLedgerUpdates`: Ledger updates not including funding payments: withdrawals, deposits, transfers, and liquidations
 * `WsBbo` : Bbo updates that are sent only if the bbo changes on a block
 * `WsSpotState` : Spot state update.
+* `WsAllDexsClearinghouseState` : Clearinghouse states across all dexs for specific user
+* `WsAllDexsAssetCtxs` : Asset contexts across all dexs
 
 For the streaming user endpoints such as `WsUserFills`,`WsUserFundings` the first message has `isSnapshot: true` and the following streaming updates have `isSnapshot: false`.&#x20;
 
@@ -384,6 +392,15 @@ interface UserBalance {
   hold: string;
   total: string;
   entryNtl: string;
+}
+
+interface WsAllDexsClearinghouseState {
+  user: string;
+  clearinghouseStates: Record<string, ClearinghouseState>;
+}
+
+interface WsAllDexsAssetCtxs {
+  ctxs: Record<string, Array<PerpsAssetCtx>>;
 }
 ```
 
