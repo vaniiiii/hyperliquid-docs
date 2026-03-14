@@ -7,7 +7,7 @@
 - [Contract specifications](/hyperliquid-docs/trading/contract-specifications.md)
 - [Margining](/hyperliquid-docs/trading/margining.md)
 - [Account abstraction modes](/hyperliquid-docs/trading/account-abstraction-modes.md)
-- [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md): Pre-alpha mode
+- [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md): Alpha mode
 - [Margin tiers](/hyperliquid-docs/trading/margin-tiers.md)
 - [Robust price indices](/hyperliquid-docs/trading/robust-price-indices.md)
 - [Liquidations](/hyperliquid-docs/trading/liquidations.md)

@@ -2,11 +2,17 @@
 
 Under portfolio margin, a user’s spot and perps trading are unified for greater capital efficiency. Furthermore, portfolio margin accounts automatically earn yield on all borrowable assets not actively used for trading.
 
-Portfolio margin unlocks functionality such as the carry trade where a spot balance is offset by a short perps position, collateralized by the spot balance. Spot and perp pnl offset each other, protecting against liquidation on the perp position. More generally, spot and perps trading can be performed from a single unified balance. For example, a user could also hold HYPE and immediately buy ETH on the ETH/USDH book. All HIP-3 DEXs are included in portfolio margin, though not all HIP-3 DEX collateral assets are borrowable. Future HyperCore asset classes and primitives will support portfolio margin as well.
+Portfolio margin unlocks functionality such as the carry trade where a spot balance is offset by a short perps position, collateralized by the spot balance. Spot and perp pnl offset each other, protecting against liquidation on the perp position. More generally, spot and perps trading can be performed from a single unified balance. For example, a user could also hold HYPE and immediately buy BTC on the BTC/USDH book. All HIP-3 DEXs are included in portfolio margin, though not all HIP-3 DEX collateral assets are borrowable. Future HyperCore asset classes and primitives will support portfolio margin as well.
 
 Users can supply eligible quote assets to earn yield. This synergizes and composes with HyperEVM lending protocols. In a future upgrade, CoreWriter will expose the same supply action for smart contracts. Portfolio margin intentionally does not bring a full-fledged lending market to HyperCore, as that is best built by independent teams on the EVM. For example, HyperCore lending is not tokenized, but an EVM protocol could do so by launching a fully onchain yield-bearing ERC20 token contract through CoreWriter and precompiles. Portfolio margin introduces organic demand to borrow and should expand the value proposition of teams building on the HyperEVM.
 
-IMPORTANT: Portfolio margin is a complex technical upgrade and requires bootstrapping the supply side for borrowable assets. Therefore, portfolio margin will launch in pre-alpha mode where borrowable asset caps are extremely low. Users should test with new accounts or subaccounts with <$1k in value. Portfolio margin accounts will fall back to non-portfolio margin behavior when caps are hit. In pre-alpha mode, only USDC is borrowable, and HYPE is the only collateral asset. USDH will be added as borrowable and BTC as collateral before the alpha phase. Details will be added to the Docs.
+IMPORTANT: Portfolio margin is a complex technical upgrade and requires bootstrapping the supply side for borrowable assets. Portfolio margin accounts will fall back to non-portfolio margin behavior when caps are hit. During alpha mode, the following requirements apply:&#x20;
+
+* Master account >$5M in weighted volume
+* USDH: 500M USDH global supply cap, 100M USDH global borrow cap, 5M USDH user supply cap, 1M USDH user borrow cap
+* USDC: 500M USDC global supply cap, 100M USDC global borrow cap, 5M USDC user supply cap, 1M USDC user borrow cap
+* HYPE: 1M HYPE global supply cap, 50k HYPE user supply cap
+* BTC: 400 BTC global supply cap, 20 BTC user supply cap
 
 ### LTV and borrowing
 
