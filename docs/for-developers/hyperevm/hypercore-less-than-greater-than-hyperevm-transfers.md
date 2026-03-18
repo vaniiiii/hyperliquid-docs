@@ -18,9 +18,9 @@ HYPE is a special case as the native gas token on the HyperEVM. HYPE is received
 
 ## Transferring between Core and EVM
 
-Only once a token is linked, it can be converted between HyperCore and HyperEVM spot using a spotSend action (or via the frontend) and on the EVM by using an ERC20 transfer.
+Only once a token is linked, it can be converted between HyperCore and HyperEVM spot using a sendAsset action (or via the frontend) and on the EVM by using an ERC20 transfer.
 
-Transferring tokens from HyperCore to HyperEVM can be done using a spotSend action (or via the frontend) with the corresponding system address as the destination. The tokens are credited by a system transaction that calls `transfer(recipient, amount)` on the linked contract as the system address, where recipient is the sender of the spotSend action.&#x20;
+Transferring tokens from HyperCore to HyperEVM can be done using a sendAsset action (or via the frontend) with the corresponding system address as the destination. The tokens are credited by a system transaction that calls `transfer(recipient, amount)` on the linked contract as the system address, where recipient is the sender of the sendAsset action.&#x20;
 
 Transferring tokens from HyperEVM to HyperCore can be done using an ERC20 transfer with the corresponding system address as the destination. The tokens are credited to the Core based on the emitted `Transfer(address from, address to, uint256 value)` from the linked contract.
 
