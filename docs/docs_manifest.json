@@ -504,6 +504,12 @@
       "hash": "b6a9561510cd7562fd6478f4fec8ef302c984a67549e15d2ce3929b2737ccacf",
       "last_updated": "2026-03-01T16:08:59.724088"
     },
+    "support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat.md",
+      "hash": "84f9cc5e09566084af1b3539d7b548a4c378f225a37ae39103e9de9d3ebb2343",
+      "last_updated": "2026-03-19T09:23:08.599244"
+    },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md",
@@ -513,32 +519,32 @@
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network.md",
-      "hash": "90588edb68924a29295e89181b594439fb017275f47c96d5d2d667076e632315",
-      "last_updated": "2026-03-01T16:09:01.783349"
+      "hash": "a3219f1a31de194498aa097f8fe27c94c0248c525c38b11d8ef00bd7b95e3b6b",
+      "last_updated": "2026-03-19T09:23:09.829533"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network.md",
-      "hash": "e21ea594e2fe2d0a659f1fe86be58936b85a53d7f9f9a406141be862af9f3e5f",
-      "last_updated": "2026-03-01T16:09:02.831353"
+      "hash": "f7c3c4ee5d7d4d03c7733dc5ff2dc6b37470d015cb00cc2037c50134a11f365c",
+      "last_updated": "2026-03-19T09:23:10.448890"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network.md",
-      "hash": "408648e6847cbe27c9a584d44bc0785c59fccf3fd202c9d6573bd453c9aa42b7",
-      "last_updated": "2026-03-01T16:09:03.905331"
+      "hash": "9014a597ee06429b08d778b1d7b56bc6d5126ac8e950c7aa03fe38409214ee53",
+      "last_updated": "2026-03-19T09:23:11.059865"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network.md",
-      "hash": "c6edbcdf76f21c4725ce2ad126cd04ce9d59d3883db73696fa28637835774b97",
-      "last_updated": "2026-03-01T16:09:04.939876"
+      "hash": "ec1a6b9debd2f00b42acae9300de3ab833d927e3542c4427f550091093c957d7",
+      "last_updated": "2026-03-19T09:23:11.669214"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md",
-      "hash": "661c5750d4217c7966b09898be8eb87cf527e9faba582c35a606becf68fe8d67",
-      "last_updated": "2026-03-01T16:09:06.024592"
+      "hash": "7436af2361a234749a3b5ba61d101094e0e40efc6fe1a887fe22a120b1be9366",
+      "last_updated": "2026-03-19T09:23:12.308788"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing",
@@ -645,8 +651,8 @@
     "support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md",
-      "hash": "b0de0531432884fa1e5a61b6e0093c35ceb031552a76dad46db146dfec83ebfd",
-      "last_updated": "2026-03-01T16:09:26.395279"
+      "hash": "529780563549bb130477b8d9f08d460f7320de548217b0cd85ed6108501d6a0b",
+      "last_updated": "2026-03-19T09:23:24.460350"
     },
     "support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet",
@@ -818,14 +824,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-19T06:32:26.948572",
-    "duration_seconds": 144.097557,
-    "pages_discovered": 136,
-    "pages_fetched": 136,
+    "completed_at": "2026-03-19T09:23:42.125627",
+    "duration_seconds": 91.088046,
+    "pages_discovered": 137,
+    "pages_fetched": 137,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-19T06:32:26.948593",
+  "last_updated": "2026-03-19T09:23:42.125649",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

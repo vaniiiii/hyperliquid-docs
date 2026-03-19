@@ -4,15 +4,13 @@
 
 {% stepper %}
 {% step %}
-
-### Check the withdrawal action you conducted
+Check the withdrawal action you conducted
 
 Go to the Portfolio page and check the Deposits & Withdrawals table
 {% endstep %}
 
 {% step %}
-
-### Check if you used 'Send' or 'Withdraw'
+Check if you used 'Send' or 'Withdraw'
 
 For the withdrawal you are referring to, check if the Action column says “Send Spot,” “Send USDC (Perps Wallet),” or “Withdrawal”&#x20;
 {% endstep %}
