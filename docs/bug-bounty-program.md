@@ -3,8 +3,7 @@
 ### In scope
 
 * On mainnet, any bug that would cause an outage or logical error on nodes or API servers is in scope.&#x20;
-* On testnet, testnet-only features of the HyperEVM and its interaction with HyperCore are also in scope. Note that for features that are not live on mainnet, the bounty payment for EVM bugs will not match a mainnet bug of the same severity.&#x20;
-* Other experimental features on testnet are not in scope, unless otherwise announced in [Discord](https://discord.gg/hyperliquid) or Telegram announcements, though bug reports are still appreciated for these features.
+* Experimental features on testnet are not in scope, unless otherwise announced in [Discord](https://discord.gg/hyperliquid) or Telegram announcements, though bug reports are still appreciated for these features.
 
 ### Submission process
 

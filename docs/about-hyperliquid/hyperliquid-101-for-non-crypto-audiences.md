@@ -4,7 +4,7 @@ Hyperliquid is a blockchain designed to upgrade the existing financial system. J
 
 Hyperliquid is best known for perpetual futures<sup>1</sup> and spot trading, which drives billions in daily volume. >$1B in annualized fees go toward programmatically buying back the HYPE token. HYPE is used to secure the network, pay for network costs, provide trading fee discounts, and more.&#x20;
 
-In the same way that AWS provides the cloud infrastructure for developers to build on the internet, Hyperliquid provides the liquidity infrastructure for developers to build financial applications. Independent teams using Hyperliquid’s liquidity infrastructure (e.g., mobile apps, trading terminals, self-custodial wallets) have generated >$45M in revenue through builder codes, which monetize user activity<sup>2</sup>. The ecosystem extends beyond trading, supporting borrowing, lending, minting compliant stablecoins, and launching perpetual contracts on any asset.
+In the same way that AWS provides the cloud infrastructure for developers to build on the internet, Hyperliquid provides the liquidity infrastructure for developers to build financial applications. Independent teams using Hyperliquid’s liquidity infrastructure (e.g., mobile apps, trading terminals, self-custodial wallets) have generated >$65M in revenue through builder codes, which monetize user activity<sup>2</sup>. The ecosystem extends beyond trading, supporting borrowing, lending, minting compliant stablecoins, and launching perpetual contracts on any asset.
 
 Hyperliquid modernizes market structure through:
 

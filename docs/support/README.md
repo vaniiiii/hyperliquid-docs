@@ -14,8 +14,7 @@ Read this page before you open a ticket. Tickets may take up to 48 hours for a r
 ### Important reminders
 
 1. Never share your wallet, seed phrase, password, or private key with anyone or any website. If someone directly reaches out to you, assume they are a scammer.
-2. There is no Hyperliquid app on any app store. Any app pretending to be the official Hyperliquid app is a scam. Do not download or interact with it.
-3. Always check the full URL of any website you interact with. Scammers often use similar looking domains, e.g., “hyperliguid.xyz,” to prompt users to sign a malicious transaction.
+2. Always check the full URL of any website you interact with. Scammers often use similar looking domains, e.g., “hyperliguid.xyz,” to prompt users to sign a malicious transaction.
    1. The official Hyper Foundation website is <https://hyperfoundation.org/>
    2. You can trade on <https://app.hyperliquid.xyz/trade>, in addition to other apps and websites&#x20;
    3. The official X (Twitter) accounts are <https://x.com/HyperliquidX> and <https://x.com/HyperFND>

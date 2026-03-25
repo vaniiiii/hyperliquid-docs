@@ -17,8 +17,7 @@ RPC URL:[ https://rpc.hyperliquid.xyz/evm](https://rpc.hyperliquid.xyz/evm)&#x20
 Block explorer URL (optional):&#x20;
 
 1. <https://hyperevmscan.io/>
-2. <https://purrsec.com/>&#x20;
-3. <https://www.hyperscan.com/>
+2. <https://www.hyperscan.com/>
 
 Currency Symbol: HYPE
 
