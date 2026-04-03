@@ -20,5 +20,5 @@ Hyperliquid's contract specifications are simpler than most platforms. There are
 | Position limit              | N/A                                                                                                                                        |
 | Account type                | Per-wallet cross or isolated margin                                                                                                        |
 | Funding impact notional     | <p>20000 USDC for BTC and ETH</p><p>6000 USDC for all other assets </p>                                                                    |
-| Maximum market order value  | $15,000,000 for max leverage >= 25, $5,000,000 for max leverage in \[20, 25), $2,000,000 for max leverage in \[10, 20), otherwise $500,000 |
+| Maximum market order value  | $30,000,000 for max leverage >= 25, $5,000,000 for max leverage in \[20, 25), $2,000,000 for max leverage in \[10, 20), otherwise $500,000 |
 | Maximum limit order value   | 10 \* maximum market order value                                                                                                           |

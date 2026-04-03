@@ -687,8 +687,8 @@
     "trading/contract-specifications.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications.md",
-      "hash": "6152fac4945ad45d9b0aa90b28de7b34c51a79df1ee7779d2fd15c86b40bcaa0",
-      "last_updated": "2026-03-01T16:09:34.170273"
+      "hash": "881ae05ab16a2389e7bbbc00c4c6eacd3fcf89ae6e8c16750e3c8d6e155e5f05",
+      "last_updated": "2026-04-03T06:37:54.225419"
     },
     "trading/delisting.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting",
@@ -824,14 +824,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-03T04:02:03.151795",
-    "duration_seconds": 119.942243,
+    "completed_at": "2026-04-03T06:38:14.511666",
+    "duration_seconds": 142.141615,
     "pages_discovered": 137,
     "pages_fetched": 137,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-03T04:02:03.151818",
+  "last_updated": "2026-04-03T06:38:14.511689",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
