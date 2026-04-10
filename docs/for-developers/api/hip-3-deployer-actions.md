@@ -237,6 +237,8 @@ type SetGrowthModes = Array<[string, bool]>;
 
 // category <= 15 characters
 // description <= 400 characters
+// displayName <= 9 characters
+// <= 2 keywords, each keyword <= 10 characters
 type SetPerpAnnotation {
   coin: string;
   category: string;

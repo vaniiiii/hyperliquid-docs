@@ -99,8 +99,8 @@
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions.md",
-      "hash": "fc2e0341408726b12cf8fe866a4494e78f628531ce2d0a1a7229eb794174083f",
-      "last_updated": "2026-03-17T12:26:39.297781"
+      "hash": "3d0c30e7a7e97fd97067f02b8463db8770bb142dfaf4f4902b7ce5f49381faf0",
+      "last_updated": "2026-04-10T12:26:35.891550"
     },
     "for-developers/api/info-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint",
@@ -137,6 +137,12 @@
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency.md",
       "hash": "68f2421be59a58016ca1d00597cecd83f1e0d4dea5198990f04aba0c13c05d1f",
       "last_updated": "2026-03-01T16:07:42.279847"
+    },
+    "for-developers/api/priority-fees.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
+      "hash": "74ac475140db0b5146e205bc705e626734c0addaacffab40d5434706dd5fb0a6",
+      "last_updated": "2026-04-10T12:26:43.252569"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -824,14 +830,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-10T09:37:48.078062",
-    "duration_seconds": 145.065727,
-    "pages_discovered": 137,
-    "pages_fetched": 137,
+    "completed_at": "2026-04-10T12:28:40.932762",
+    "duration_seconds": 147.082356,
+    "pages_discovered": 138,
+    "pages_fetched": 138,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-10T09:37:48.078081",
+  "last_updated": "2026-04-10T12:28:40.932787",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
