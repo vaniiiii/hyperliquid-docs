@@ -26,7 +26,7 @@ Below is a list of possible batched error responses:
 
 Important: Some errors are a deterministic function of the payload itself, and these are instead returned earlier as part of pre-validation. In this case only one error is returned for the entire payload, as some of these errors do not apply to a specific order or cancel.
 
-Examples include: empty batch of orders, non-reduce-only TP/SL orders, and some forms of tick size validation.&#x20;
+Examples include: empty batch of orders, non-reduce-only TP/SL orders, order too far from reference price, and some forms of tick size validation.&#x20;
 
 For API users that use batching, it's recommended to handle the case where a single error is returned for a batch of multiple orders. In this case, the response could be duplicated `n`times before being sent to the callback function, as the whole batch was rejected for this same reason.
 
