@@ -6,6 +6,8 @@ Background: latency-sensitive users may find `split_client_blocks: true` useful,
 
 There are 5 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data with `split_client_blocks: true`. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
 
+Testnet-only until the next network upgrade: gossip priority will apply to both mempool transactions and client blocks.
+
 The lower auction indices are strictly prioritized over higher indices. The prioritization applies to all data in the mempool transactions stream equally. The ordering should be relatively consistent in expectation but is subject to variance from the p2p consensus network. Gossip priority applies only to reading data. For prioritization of sending data, see the section below on order priority. Nodes respecting gossip priority will use the previous auction winners relative to that node's current execution state. Similar to token, spot, and perp deployment auctions, fees come out of spot balance are burned.
 
 The previous auction winners (i.e., current gossip priority ordering) and current auction statuses can be queried using the info request `{ "type": "gossipPriorityAuctionStatus"}`.&#x20;
