@@ -2,7 +2,7 @@
 
 ### Gossip (read) priority
 
-Background: latency-sensitive users may find `split_client_blocks: true` useful, as it streams transactions to be committed hundreds of milliseconds before they are included in client blocks. As documented in the node repository, these are the fastest transaction inputs to execution, broadcast even before they are executed by the L1. The tradeoff with the faster input data is that the results from execution are not yet available. However, with simple actions like orders, the consumer can stream estimated account values for all users to predict execution results with reasonable accuracy.
+Background: latency-sensitive users may find `split_client_blocks: true` useful, as it streams transactions to be committed before they are included in client blocks. This can lead to 70-150ms improvement in latency when reading inputs. As documented in the node repository, these are the fastest transaction inputs to execution, broadcast even before they are executed by the L1. The tradeoff with the faster input data is that the results from execution are not yet available. However, with simple actions like orders, the consumer can stream estimated account values for all users to predict execution results with reasonable accuracy.
 
 There are 5 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data with `split_client_blocks: true`. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
 
