@@ -343,6 +343,115 @@ Note that to target a specific leverage instead of a USDC value of margin change
 {% endtab %}
 {% endtabs %}
 
+## Send Asset
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+This generalized method is used to transfer tokens between different perp DEXs, spot balance, users, and/or sub-accounts. Use "" to specify the default USDC perp DEX and "spot" to specify spot. Only the collateral token can be transferred to or from a perp DEX.
+
+#### Headers
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
+
+#### Body
+
+| Name                                        | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "sendAsset",</p><p>  "hyperliquidChain": "Mainnet" (on testnet use "Testnet" instead),</p><p>  "signatureChainId": the id of the chain used when signing in hexadecimal format; e.g. "0xa4b1" for Arbitrum,</p><p>  "destination": address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000,</p><p>  "sourceDex": name of perp dex to transfer from,</p><p>  "destinationDex": name of the perp dex to transfer to,</p><p>  "token": tokenName:tokenId; e.g. "PURR:0xc4bf3f870c0e9465323c0b6ed28096c2",</p><p>  "amount": amount of token to send as a string; e.g. "0.01",</p><p>  "fromSubAccount": address in 42-character hexadecimal format or empty string if not from a subaccount,</p><p>  "nonce": current timestamp in milliseconds as a Number, should match nonce</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds, must match the nonce in the action Object above                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+#### Response
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Agent Send Asset
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+Similar to send asset, but can be signed by an agent. Destination must match the source address. Use "" to specify the default USDC perp DEX and "spot" to specify spot. Only the collateral token can be transferred to or from a perp DEX.
+
+#### Headers
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
+
+#### Body
+
+| Name                                        | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "agentSendAsset",</p><p>  "destination": address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000,</p><p>  "sourceDex": name of perp dex to transfer from,</p><p>  "destinationDex": name of the perp dex to transfer to,</p><p>  "token": tokenName:tokenId; e.g. "PURR:0xc4bf3f870c0e9465323c0b6ed28096c2",</p><p>  "amount": amount of token to send as a string; e.g. "0.01",</p><p>  "fromSubAccount": address in 42-character hexadecimal format or empty string if not from a subaccount,</p><p>  "nonce": current timestamp in milliseconds as a Number, should match nonce</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds, must match the nonce in the action Object above                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+#### Response
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Send to EVM with data
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+Specialized action for Core to EVM transfer that includes an additional data payload. See [hypercore-less-than-greater-than-hyperevm-transfers](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers "mention") for more details. When used coreReceiveWithData will be called on the linked contract instead of transfer. IMPORTANT: it is the caller's responsibility to ensure that the token is properly linked and the linked contract supports the following interface:<br>
+
+```
+interface ICoreReceiveWithData {
+  function coreReceiveWithData(
+    address from,
+    bytes32 destinationRecipient,
+    uint32 destinationChainId,
+    uint256 amount,
+    uint64 nonce,
+    bytes calldata data
+  ) external;
+}
+```
+
+#### Headers
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
+
+#### Body
+
+| Name                                        | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                   |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "sendToEvmWithData",</p><p>  "hyperliquidChain": "Mainnet" (on testnet use "Testnet" instead),</p><p>  "signatureChainId": the id of the chain used when signing in hexadecimal format; e.g. "0xa4b1" for Arbitrum,</p><p>  "token": tokenName:tokenId; e.g. "PURR:0xc4bf3f870c0e9465323c0b6ed28096c2",</p><p>  "amount": amount of token to send as a string; e.g. "0.01",</p><p>  "sourceDex": name of perp dex to transfer from,</p><p>  "destinationRecipient": address in addressEncoding format,</p><p>  "addressEncoding": "hex" | "base58",</p><p>  "destinationChainId": number,</p><p>  "gasLimit": number,</p><p>  "data": bytes,</p><p>  "nonce": current timestamp in milliseconds as a Number, should match nonce</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds, must match the nonce in the action Object above                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                   |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                   |
+
+#### Response
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
 ## Core USDC transfer
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
@@ -499,83 +608,6 @@ This method is used to transfer USDC from the user's spot wallet to perp wallet 
 {% tab title="200: OK" %}
 
 ```json
-{'status': 'ok', 'response': {'type': 'default'}}
-```
-
-{% endtab %}
-{% endtabs %}
-
-## Send Asset
-
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
-
-This generalized method is used to transfer tokens between different perp DEXs, spot balance, users, and/or sub-accounts. Use "" to specify the default USDC perp DEX and "spot" to specify spot. Only the collateral token can be transferred to or from a perp DEX.
-
-#### Headers
-
-| Name                                           | Value              |
-| ---------------------------------------------- | ------------------ |
-| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
-
-#### Body
-
-| Name                                        | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "sendAsset",</p><p>  "hyperliquidChain": "Mainnet" (on testnet use "Testnet" instead),</p><p>  "signatureChainId": the id of the chain used when signing in hexadecimal format; e.g. "0xa4b1" for Arbitrum,</p><p>  "destination": address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000,</p><p>  "sourceDex": name of perp dex to transfer from,</p><p>  "destinationDex": name of the perp dex to transfer to,</p><p>  "token": tokenName:tokenId; e.g. "PURR:0xc4bf3f870c0e9465323c0b6ed28096c2",</p><p>  "amount": amount of token to send as a string; e.g. "0.01",</p><p>  "fromSubAccount": address in 42-character hexadecimal format or empty string if not from a subaccount,</p><p>  "nonce": current timestamp in milliseconds as a Number, should match nonce</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds, must match the nonce in the action Object above                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-
-#### Response
-
-{% tabs %}
-{% tab title="200: OK" %}
-
-```
-{'status': 'ok', 'response': {'type': 'default'}}
-```
-
-{% endtab %}
-{% endtabs %}
-
-## Send to EVM with data
-
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
-
-Specialized action for Core to EVM transfer that includes an additional data payload. See [hypercore-less-than-greater-than-hyperevm-transfers](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers "mention") for more details. When used coreReceiveWithData will be called on the linked contract instead of transfer. IMPORTANT: it is the caller's responsibility to ensure that the token is properly linked and the linked contract supports the following interface:<br>
-
-```
-interface ICoreReceiveWithData {
-  function coreReceiveWithData(
-    address from,
-    bytes32 destinationRecipient,
-    uint32 destinationChainId,
-    uint256 amount,
-    uint64 nonce,
-    bytes calldata data
-  ) external;
-}
-```
-
-#### Headers
-
-| Name                                           | Value              |
-| ---------------------------------------------- | ------------------ |
-| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
-
-#### Body
-
-| Name                                        | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                   |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "sendToEvmWithData",</p><p>  "hyperliquidChain": "Mainnet" (on testnet use "Testnet" instead),</p><p>  "signatureChainId": the id of the chain used when signing in hexadecimal format; e.g. "0xa4b1" for Arbitrum,</p><p>  "token": tokenName:tokenId; e.g. "PURR:0xc4bf3f870c0e9465323c0b6ed28096c2",</p><p>  "amount": amount of token to send as a string; e.g. "0.01",</p><p>  "sourceDex": name of perp dex to transfer from,</p><p>  "destinationRecipient": address in addressEncoding format,</p><p>  "addressEncoding": "hex" | "base58",</p><p>  "destinationChainId": number,</p><p>  "gasLimit": number,</p><p>  "data": bytes,</p><p>  "nonce": current timestamp in milliseconds as a Number, should match nonce</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds, must match the nonce in the action Object above                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                   |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                   |
-
-#### Response
-
-{% tabs %}
-{% tab title="200: OK" %}
-
-```
 {'status': 'ok', 'response': {'type': 'default'}}
 ```
 
