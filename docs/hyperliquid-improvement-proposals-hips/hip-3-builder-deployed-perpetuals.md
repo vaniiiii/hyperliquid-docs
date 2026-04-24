@@ -61,6 +61,12 @@ IMPORTANT: Enabling cross margin on an asset is irreversible. Deployers should c
 
 Despite the system-level protection, users still take greater risk when using cross margin across DEXs with different deployers. To better protect users, mainnet validators will enforce that HIP-3 deployers only enable cross margin on assets that satisfy defined eligibility standards, including: sufficient observable liquidity, a reliable external oracle source, and resilience to price manipulation. In particular, each time the \`externalPerpPx\` of an asset moves more than 50% relative to the start of day price, validators will conduct a review to determine whether the deployer should be slashed due to manipulation. Assets where 50% daily moves are expected more than once a month are ineligible for cross margin and are subject to deployer slashing.
 
+### Backstop Liquidator
+
+Each HIP-3 dex is associated with a fully onchain strategy at `0x400..00 + {dex_index}` that takes over backstop liquidatable positions from the designated HIP-3 DEX. The onchain backstop liquidators only accept assets where cross margin is enabled, making those assets significantly less likely to experience ADL going forward during high volatility events. Each DEX’s onchain backstop liquidator is an independent user and falls back to ADL to mathematically guarantee solvency of the DEX.
+
+There is no action item for users. Once scaled out, the backstop liquidators will absorb undercollateralized positions while simultaneously avoiding bad debt and reducing the need for ADL.
+
 
 ---
 

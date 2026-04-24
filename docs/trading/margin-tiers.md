@@ -50,14 +50,14 @@ Mainnet margin tiers are enabled for the assets below:
 | 0-40M                          | 20           |
 | >40M                           | 10           |
 
-#### DOGE, kPEPE, SUI, WLD, TRUMP, LTC, ENA, POPCAT, WIF, AAVE, kBONK, LINK, CRV, AVAX, ADA, UNI, NEAR, TIA, APT, BCH, HYPE, FARTCOIN
+#### AAVE, ADA, APT, AVAX, BCH, CRV, DOGE, ENA, FARTCOIN, HYPE, kBONK, kPEPE, LINK, LTC, NEAR, PUMP, SUI, TRUMP, UNI, WLD, ZEC
 
 | Notional Position Value (USDC) | Max Leverage |
 | ------------------------------ | ------------ |
 | 0-20M                          | 10           |
 | >20M                           | 5            |
 
-#### OP, ARB, LDO, TON, MKR, ONDO, JUP, INJ, kSHIB, SEI, TRX, BNB, DOT
+#### ARB, BNB, DOT, JUP, kSHIB, MKR, ONDO, PAXG, TON, TRX, XPL
 
 | Notional Position Value (USDC) | Max Leverage |
 | ------------------------------ | ------------ |
@@ -66,9 +66,9 @@ Mainnet margin tiers are enabled for the assets below:
 
 ### Testnet Margin Tiers
 
-The tiers on testnet are lower than mainnet would feature, for ease of testing.&#x20;
+The tiers on testnet are lower than mainnet, for ease of testing.&#x20;
 
-#### LDO, ARB, MKR, ATOM, PAXG, TAO, ICP, AVAX, FARTCOIN - testnet only
+#### ARB, ATOM, AVAX, FARTCOIN, ICP, TAO - testnet only
 
 | Notional Position Value (USDC) | Max Leverage |
 | ------------------------------ | ------------ |
@@ -80,8 +80,7 @@ The tiers on testnet are lower than mainnet would feature, for ease of testing.&
 | Notional Position Value (USDC) | Max Leverage |
 | ------------------------------ | ------------ |
 | 0-20k                          | 10           |
-| 20-100k                        | 5            |
-| >100k                          | 3            |
+| >20k                           | 5            |
 
 #### ETH - testnet only
 
@@ -89,8 +88,7 @@ The tiers on testnet are lower than mainnet would feature, for ease of testing.&
 | ------------------------------ | ------------ |
 | 0-20k                          | 25           |
 | 20-50k                         | 10           |
-| 50-200k                        | 5            |
-| >200k                          | 3            |
+| >50k                           | 5            |
 
 #### BTC - testnet only
 
@@ -98,9 +96,7 @@ The tiers on testnet are lower than mainnet would feature, for ease of testing.&
 | ------------------------------ | ------------ |
 | 0-10k                          | 40           |
 | 10-50k                         | 25           |
-| 50-100k                        | 10           |
-| 100k-300k                      | 5            |
-| >300k                          | 3            |
+| >50k                           | 10           |
 
 
 ---

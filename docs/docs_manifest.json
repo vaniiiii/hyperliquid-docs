@@ -393,8 +393,8 @@
     "hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md",
-      "hash": "418946761838cd5bcbc856f29b014ea1723f3945569490cf82a0276e10fc7d35",
-      "last_updated": "2026-04-23T15:44:11.705997"
+      "hash": "540cf392aace4d9c66965d76f85e079e1ad5ef6d88aae461c09918215adc1921",
+      "last_updated": "2026-04-24T12:33:51.946647"
     },
     "onboarding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding",
@@ -747,8 +747,8 @@
     "trading/margin-tiers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers.md",
-      "hash": "18a35d89a48b5229eeba9d7cdeda9ca10f1a3413b8b88e86547101f2af664430",
-      "last_updated": "2026-04-23T15:45:22.615516"
+      "hash": "23681a9b46f9befafab192b926c8354bae629abe737fbe508f91da6955e6ae92",
+      "last_updated": "2026-04-24T12:34:53.450316"
     },
     "trading/margining.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-24T09:43:55.869486",
-    "duration_seconds": 152.666713,
+    "completed_at": "2026-04-24T12:35:05.958273",
+    "duration_seconds": 138.724443,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-24T09:43:55.869512",
+  "last_updated": "2026-04-24T12:35:05.958296",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
