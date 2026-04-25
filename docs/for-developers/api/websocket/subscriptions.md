@@ -349,6 +349,12 @@ interface LeadingVault {
 }
 
 interface ClearinghouseState {
+  dex: string;
+  user: string;
+  clearinghouseState: InnerClearinghouseState;
+}
+
+interface InnerClearinghouseState {
   assetPositions: Array<AssetPosition>;
   marginSummary: MarginSummary;
   crossMarginSummary: MarginSummary;
@@ -396,11 +402,11 @@ interface UserBalance {
 
 interface WsAllDexsClearinghouseState {
   user: string;
-  clearinghouseStates: Record<string, ClearinghouseState>;
+  clearinghouseStates: Array<[string, InnerClearinghouseState]>;
 }
 
 interface WsAllDexsAssetCtxs {
-  ctxs: Record<string, Array<PerpsAssetCtx>>;
+  ctxs: Array<[string, Array<PerpsAssetCtx>]>;
 }
 ```
 
