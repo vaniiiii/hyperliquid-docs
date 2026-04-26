@@ -52,6 +52,7 @@ The subscription object contains the details of the specific feed you want to su
 11. `userEvents`:&#x20;
     * Subscription message: `{ "type": "userEvents", "user": "<address>" }`
     * Data format: `WsUserEvent`
+    * Note: The channel name for `userEvents` messages is `"channel": "user"`
 12. `userFills`:&#x20;
     * Subscription message: `{ "type": "userFills", "user": "<address>" }`
     * Optional parameter:  `aggregateByTime: bool`&#x20;

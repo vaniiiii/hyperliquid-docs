@@ -177,8 +177,8 @@
     "for-developers/api/websocket/subscriptions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions.md",
-      "hash": "ea0892ea68d94a4f525ceb549d307f00b62f7c331512cfb738e407a5bab9b76c",
-      "last_updated": "2026-04-25T18:22:41.897402"
+      "hash": "2c4db3cd7892d3827dc64a7be91cbedd2bb7347a653c2ea3a2f1c5cbe750f9ae",
+      "last_updated": "2026-04-26T18:23:08.980223"
     },
     "for-developers/api/websocket/timeouts-and-heartbeats.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/timeouts-and-heartbeats",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-26T15:22:06.255240",
-    "duration_seconds": 80.237384,
+    "completed_at": "2026-04-26T18:24:56.911399",
+    "duration_seconds": 138.231175,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-26T15:22:06.255263",
+  "last_updated": "2026-04-26T18:24:56.911421",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
