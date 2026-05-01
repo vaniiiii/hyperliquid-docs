@@ -71,7 +71,7 @@ A "staking user" and a "trading user" can be linked so that the staking user's H
 
 ### Outcome Tokens (testnet only)
 
-Outcome token trading only charges fees when closing or settling, not when opening outcome positions. Only fee-paying volume is counted for outcome trading. There are 6 cases for outcome trades which are special cases of this logic:
+Outcome trading only charges fees when closing or settling, not when opening outcome positions. Only fee-paying volume is counted for outcome trading. There are 6 cases for outcome trades which are special cases of this logic:
 
 1\. Minting, no one pays fee: no volume is counted
 
@@ -84,6 +84,8 @@ Outcome token trading only charges fees when closing or settling, not when openi
 3b. Burning, only taker pays fee: both users get `taker_px * sz`
 
 4\. Settlement: each user gets `settle_fraction * sz`
+
+Outcome trading does not support rebates. Users who would receive rebates for spot and perp trading pay zero fees on maker orders.
 
 ### Fee formula for developers
 
