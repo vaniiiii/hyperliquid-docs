@@ -1,16 +1,6 @@
-# Audits
+# HIP-3
 
-The Hyperliquid bridge contract has been audited by Zellic.
-
-{% file src="/files/6HQImWlcAsjk8f6xJnEy" %}
-Final report
-{% endfile %}
-
-{% file src="/files/Vnkes8g7IbP1zZQUKLHJ" %}
-First report
-{% endfile %}
-
-&#x20;
+- [What is DEX abstraction?](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hip-3/what-is-dex-abstraction.md)
 
 
 ---
@@ -22,7 +12,7 @@ If you need additional information that is not directly available in this page, 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
 ```
-GET https://hyperliquid.gitbook.io/hyperliquid-docs/audits.md?ask=<question>
+GET https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hip-3.md?ask=<question>
 ```
 
 The question should be specific, self-contained, and written in natural language.

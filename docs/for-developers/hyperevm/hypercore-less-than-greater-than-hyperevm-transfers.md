@@ -102,7 +102,7 @@ contract Purr is ERC20Permit {
 
 Attached is a sample script for deploying an ERC20 token to the EVM and linking it to a Core spot token.
 
-{% file src="<https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2FA9xdcKwuCBMvRV6Cabw6%2Fevm_erc20.py?alt=media&token=ba802e31-1ed7-43e7-9e83-db77a1c6185d>" %}
+{% file src="/files/ByYbxCDq0BaOoY6akDhN" %}
 
 
 ---

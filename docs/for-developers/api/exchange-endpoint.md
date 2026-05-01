@@ -411,7 +411,7 @@ Similar to send asset, but can be signed by an agent. Destination must match the
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
-Specialized action for Core to EVM transfer that includes an additional data payload. See [hypercore-less-than-greater-than-hyperevm-transfers](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers "mention") for more details. When used coreReceiveWithData will be called on the linked contract instead of transfer. IMPORTANT: it is the caller's responsibility to ensure that the token is properly linked and the linked contract supports the following interface:<br>
+Specialized action for Core to EVM transfer that includes an additional data payload. See [HyperCore <> HyperEVM transfers](/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers.md) for more details. When used coreReceiveWithData will be called on the linked contract instead of transfer. IMPORTANT: it is the caller's responsibility to ensure that the token is properly linked and the linked contract supports the following interface:<br>
 
 ```
 interface ICoreReceiveWithData {

@@ -6,7 +6,7 @@ The supported modes are:
 
 1. Standard (recommended for market makers, high volume automated users, and deployers/builders): separate perp and spot balances, separate DEX balances. Cross margin applies to each DEX separately.&#x20;
 2. Unified account (recommended for most users): single balance for each asset. This balance collateralizes all cross margin positions in that asset and is unified with spot balance in that asset. For example, USDC balance is the single source for validator-operated perps, XYZ perps, and spot trading against USDC as a quote asset. USDH spot balance is the single source for KM perps, FLX perps, VNTL perps, and spot trading against USDH as a quote asset.&#x20;
-3. Portfolio margin (most capital efficient, currently in pre-alpha): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDH, USDC. See [Portfolio margin](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin) for more details.&#x20;
+3. Portfolio margin (most capital efficient, currently in pre-alpha): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDH, USDC. See [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md) for more details.&#x20;
 
 There is one more mode that is not relevant to most users, included here for completeness:
 
@@ -18,7 +18,7 @@ Important details:
 2. Portfolio margin and unified account are limited to 50k user actions per day. Standard mode has no such restrictions.
 3. For API users, unified account and portfolio margin shows all balances and holds in the spot clearinghouse state. Individual perp dex user states are not meaningful. &#x20;
 
-See Python SDK and [API docs](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api) for examples on the agent- and user-signed actions for changing account abstraction modes. Automated traders can also use the Settings dropdown on app.hyperliquid.xyz to change their account abstraction modes. app.hyperliquid.xyz defaults to unified account, and Classic in "Account Unification Mode" refers to standard, DEX abstraction (which will be discontinued), or unified account.&#x20;
+See Python SDK and [API docs](/hyperliquid-docs/for-developers/api.md) for examples on the agent- and user-signed actions for changing account abstraction modes. Automated traders can also use the Settings dropdown on app.hyperliquid.xyz to change their account abstraction modes. app.hyperliquid.xyz defaults to unified account, and Classic in "Account Unification Mode" refers to standard, DEX abstraction (which will be discontinued), or unified account.&#x20;
 
 ### Unified Account Ratio
 

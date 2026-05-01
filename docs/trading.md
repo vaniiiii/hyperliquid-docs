@@ -18,6 +18,8 @@
 - [Take profit and stop loss orders (TP/SL)](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/take-profit-and-stop-loss-orders-tp-sl.md)
 - [Entry price and pnl](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/entry-price-and-pnl.md)
 - [Self-trade prevention](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/self-trade-prevention.md)
+- [Index perpetual contracts](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/index-perpetual-contracts.md)
+- [Uniswap perpetuals](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/uniswap-perpetuals.md)
 - [Hyperps](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/hyperps.md)
 - [Delisting](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting.md)
 - [Market making](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/market-making.md)

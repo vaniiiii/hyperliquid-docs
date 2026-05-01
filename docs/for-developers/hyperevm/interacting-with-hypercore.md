@@ -71,9 +71,9 @@ contract CoreWriterCaller {
 \
 Happy building. Any feedback is appreciated.
 
-{% file src="<https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2FaHYLOESgEVGMyYE9aaH8%2FL1Read.sol?alt=media&token=681c5dcf-2480-4fd0-b03e-cd8537b50b1e>" %}
+{% file src="/files/Z8SxemCYCsCtTvMkJNIX" %}
 
-{% file src="<https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2F0DoQSkfSDinTzGSYRoQL%2FCoreWriter.sol?alt=media&token=9454dc50-8251-49f6-891e-f5ea78afda79>" %}
+{% file src="/files/KtkofGhs7hIjy2DsiYOR" %}
 
 
 ---
