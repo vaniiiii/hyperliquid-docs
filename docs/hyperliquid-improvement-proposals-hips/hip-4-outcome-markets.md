@@ -16,6 +16,8 @@ Each outcome market consists of two sides, each with a token. Usually the tokens
 
 The order books of Yes and No tokens for the same outcome are merged to share liquidity. For example, an order to buy Yes at price `p` is equivalent to an order to Sell No at price `1-p`. Advanced users may also manually split and merge outcomes. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#split-outcome) for API examples.
 
+Most operations abstract the dual book's liquidity from the user's perspective. However, there are a few examples whose ergonomics will be improved on a future network upgrade. For example, historical orders can return the primary and dual orders separately if a user sends an order that both matches and rests on the book.
+
 *Questions* are collections of outcomes that where exactly one outcome will settle to Yes, and all others will settle to No. Each outcome trades on a separate order book, but are linked by `negate` and `merge` operations. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#negate-outcome) for API examples. In other words, users with No shares on different outcomes of the same question can redeem quote tokens before the underlying outcomes settle.
 
 
