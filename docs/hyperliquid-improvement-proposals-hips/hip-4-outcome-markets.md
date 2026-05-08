@@ -20,6 +20,8 @@ Most operations abstract the dual book's liquidity from the user's perspective. 
 
 *Questions* are collections of outcomes that where exactly one outcome will settle to Yes, and all others will settle to No. Each outcome trades on a separate order book, but are linked by `negate` and `merge` operations. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#negate-outcome) for API examples. In other words, users with No shares on different outcomes of the same question can redeem quote tokens before the underlying outcomes settle.
 
+Fees are currently zero for outcome markets for initial testing. However, builder codes do work the same as normal spot trading, where builders earn builder fees on sell orders that specify their builder code.&#x20;
+
 
 ---
 

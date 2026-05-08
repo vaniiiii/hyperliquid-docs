@@ -64,6 +64,7 @@ On most other protocols, the team or insiders are the main beneficiaries of fees
 A "staking user" and a "trading user" can be linked so that the staking user's HYPE staked can be attributed to the trading user's fees. A few important points to note:
 
 * The staking user and the trading user must be controlled by the same user. For security purposes, the staking user will be able to unilaterally transfer all funds from the trading user to the staking user's account in a single irreversible transaction. A trading user should therefore never link to a staking user that is controlled by another user.
+  * A staking user may send EIP-712 signed action with primary type `HyperliquidTransaction:StakingLinkDisableTradingUser` and payload `{tradingUser: String, nonce: Number}` that renders the trading user unusable and funds locked. In 1 year after locking, the funds from the trading user are automatically transferred to the staking user. This action is irreversible and not recommended under normal operation.
 * Linking is permanent. Unlinking is not supported.
 * The staking user will not receive any staking-related fee discount after being linked.
 * Linking requires the trading user to send an action first, and then the staking user to finalize the link. See "Link Staking" at app.hyperliquid.xyz/portfolio for details.&#x20;

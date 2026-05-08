@@ -405,8 +405,8 @@
     "hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md",
-      "hash": "712cbb3647dda2f8d3ff4206bc49ebe8ee4f3d602f11f92fc67a8a32799549aa",
-      "last_updated": "2026-05-08T06:47:53.803074"
+      "hash": "10a07c1748aad33421285d38724a64e341311a4429ed2f7772563a4585289a72",
+      "last_updated": "2026-05-08T09:42:31.999367"
     },
     "onboarding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding",
@@ -747,8 +747,8 @@
     "trading/fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md",
-      "hash": "7373e33a804c62f4f19efff782eed8d276261099f76ec335e0a86d34827e5881",
-      "last_updated": "2026-05-02T09:33:44.024150"
+      "hash": "52a701bba8da5fffd15660b229721aac1698250f76097949b84d8288782ec962",
+      "last_updated": "2026-05-08T09:43:37.582848"
     },
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-08T06:48:57.390649",
-    "duration_seconds": 125.952853,
+    "completed_at": "2026-05-08T09:43:55.547925",
+    "duration_seconds": 144.412171,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-08T06:48:57.390676",
+  "last_updated": "2026-05-08T09:43:55.547947",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
