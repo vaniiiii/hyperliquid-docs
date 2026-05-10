@@ -141,8 +141,8 @@
     "for-developers/api/optimizing-latency.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency.md",
-      "hash": "ecdee51962984d8168fd313ca110d3c9f39377f58fcaddb760f62c13a0e009ad",
-      "last_updated": "2026-05-10T01:05:25.405078"
+      "hash": "a3687cc10feb94b5daaf292964e4377ec516334a30c8b05335d26f876ddedbdc",
+      "last_updated": "2026-05-10T04:26:57.764142"
     },
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-10T01:06:35.275335",
-    "duration_seconds": 85.066631,
+    "completed_at": "2026-05-10T04:28:26.353379",
+    "duration_seconds": 107.6913,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-10T01:06:35.275355",
+  "last_updated": "2026-05-10T04:28:26.353403",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
