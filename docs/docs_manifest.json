@@ -273,8 +273,8 @@
     "hypercore/aligned-quote-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets.md",
-      "hash": "34e18a5297cb1f13f24e59aebabfeef8f594ca7dec5fd489d5cc78bc8efe4efa",
-      "last_updated": "2026-04-23T15:43:40.675478"
+      "hash": "b9d65ae2f30cb3b06b7aa343020dd6efdcc4389f5e9b8e70edf41f63966a455d",
+      "last_updated": "2026-05-14T12:49:53.471846"
     },
     "hypercore/api-servers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-14T09:54:13.745685",
-    "duration_seconds": 87.167796,
+    "completed_at": "2026-05-14T12:51:16.842764",
+    "duration_seconds": 124.529852,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-14T09:54:13.745708",
+  "last_updated": "2026-05-14T12:51:16.842786",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

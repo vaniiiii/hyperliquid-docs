@@ -1,16 +1,26 @@
 # Aligned quote assets
 
-The Hyperliquid protocol will support “aligned stablecoins” as a permissionless primitive for stablecoin issuers to leverage Hyperliquid’s unique distribution and scale together with the protocol. Aligned stablecoins offer lower trading fees, better market maker rebates, and higher volume contribution toward fee tiers when used as the quote asset for a spot pair or the collateral asset for HIP-3 perps.&#x20;
+The Hyperliquid protocol supports “aligned stablecoins” as a permissionless primitive for stablecoin issuers to leverage Hyperliquid’s unique distribution and scale together with the protocol.
 
-Hyperliquid will continue to support a wide variety of permissionless quote assets for spot and perps trading. There will be continual technical developments to ensure that the Hyperliquid L1 is the most performant infrastructure for general purpose asset issuance, liquidity, and building.
+The motivation behind alignment is to introduce an opt-in setting for new stablecoin teams to bootstrap their network effects and share upside proportionally with the protocol. Similar to the builder-protocol synergy of permissionless spot listings, HIP-3, and builder codes, aligned stablecoins are part of the infrastructure to move all of finance onchain.
 
-To be clear, the motivation behind alignment is not to exclude any issuers, but rather to introduce an opt-in setting for new stablecoin teams to bootstrap their network effects and share upside proportionally with the protocol. Aligned stables and other assets serve different purposes and audiences, and will coexist and complement each other. Similar to the builder-protocol synergy of permissionless spot listings, HIP-3, and builder codes, aligned stablecoins are part of the infrastructure to move all of finance onchain.
+### AQAv2
+
+Based on user and deployer feedback, the AQAv2 spec extends the designation of “aligned quote asset” to stablecoins that are not exclusive to Hyperliquid. Under AQAv2, stablecoin deployers share approximately 90% of cost-adjusted reserve yield revenue on their Hyperliquid supply with the protocol.&#x20;
+
+AQAv2 will be a requirement for quote assets to be listed against HIP-4 and validator-operated perp markets on a future network upgrade. There is no trading fee or volume contribution benefit to AQAv2. Other quote assets will continue to be supported for other markets, including spot and HIP-3 perps.&#x20;
+
+AQAv2 allows specification of a “technical deployer” and a “treasury deployer.” The treasury deployer will designate a treasury address which will share 100% of the AQA rate (the cost-adjusted onchain reference rate oracle) with the protocol through the onchain AQA mechanic. This is twice the rate of revenue share of the existing AQA spec. The treasury deployer must stake 500k HYPE, which is slashable if the treasury address does not have sufficient balance for onchain revenue to be deducted. The technical deployer must stake 500k HYPE and ensure reliable mint, redemption, and cross-chain transfer infrastructure for the aligned quote asset. Under AQAv2, the linked HyperEVM contract that connects to HyperCore will also rebalance with the treasury address. The HyperEVM balance corresponding to minted HyperCore tokens will be held in a ratio of 9:1 between the treasury address and technical deployer’s linked EVM contract address, respectively.
+
+### AQAv1
+
+AQAv1 offers lower trading fees, better market maker rebates, and higher volume contribution toward fee tiers when used as the quote asset for a spot pair or the collateral asset for HIP-3 perps.&#x20;
 
 **Onchain requirements:**
 
 1. Enabled as a permissionless quote token
 2. 800k additional staked HYPE by deployer, meaning a total of 1M staked HYPE including the 200k staked HYPE for the quote token deployment. This is to give builders and users assurance to use the aligned stablecoin.
-3. 50% of the deployer’s offchain reserve income must flow to the protocol. Validators may vote to update the calculation methodology as regulatory standards evolve. There will be follow-up work on the precise definition of risk-free rate, which will be updated according to an onchain stake-weighted median of validator reported values. A CoreWriter action will allow the deployer to reflect the exact minted balance from HyperEVM directly to HyperCore, which will allow a fully automated fee share mechanism as part of L1 execution.
+3. 50% of the AQA rate flows to the protocol. Validators may vote to update the calculation methodology as regulatory standards evolve. The AQA rate is updated according to an onchain stake-weighted median of validator reported values. A CoreWriter action allows the deployer to reflect the exact minted balance from HyperEVM directly to HyperCore, allowing a fully automated fee share mechanism as part of L1 execution.
 
 **Offchain requirements, enforced through onchain quorum of validator votes:**
 
@@ -19,7 +29,7 @@ To be clear, the motivation behind alignment is not to exclude any issuers, but 
 3. The deployer can only deploy assets that directly support the aligned stablecoin. For example, the underlying treasuries could be issued onchain. The net effect is that the deployer must share half of its offchain yield income through the existence of the aligned stablecoin. The deployer and its affiliates may not receive any economic benefits tied to conversion of the aligned stablecoin into another asset. "Benefit" includes but is not limited to revenue share, order-flow payments or any form of rate-linked compensation.
 4. The team building an aligned stablecoin must be independent and dedicated to building on Hyperliquid.&#x20;
 
-**Aligned stable benefits, applied to spot and perp trading:**
+**AQAv1 benefits, applied to spot and perp trading:**
 
 1. 20% lower taker fees&#x20;
 2. 50% better maker rebates
